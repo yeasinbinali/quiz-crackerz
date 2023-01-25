@@ -1,0 +1,17 @@
+.card-body{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.topic-btn{
+    border: none;
+    background-image: linear-gradient(rgb(114, 238, 238), rgb(111, 204, 111));
+    color: black;
+    font-weight: bold;
+    padding: 5px 10px;
+    text-decoration: none;
+}
+.topic-btn:hover{
+    background-image: linear-gradient(aqua, rgb(12, 238, 12));
+    color: blue;
+}

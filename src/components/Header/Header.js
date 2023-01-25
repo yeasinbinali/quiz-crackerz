@@ -1,10 +1,10 @@
 import React from "react";
-import './Header.css';
+import "./Header.css";
 import { Link } from "react-router-dom";
 
 const Header = () => {
   return (
-    <nav className="navbar navbar-expand-lg navbar-light bg-light">
+    <nav className="navbar navbar-expand-lg navbar-light container">
       <div className="container-fluid">
         <div>
           <h3>Quiz Crackerz</h3>
@@ -23,13 +23,16 @@ const Header = () => {
         <div className="collapse navbar-collapse" id="navbarNav">
           <ul className="navbar-nav">
             <li className="nav-item">
-              <Link to='/topics'>Topics</Link>
+              <Link to="/home">Home</Link>
             </li>
             <li className="nav-item">
-              <Link to='/statistics'>Statistics</Link>
+              <Link to="/topics">Topics</Link>
             </li>
             <li className="nav-item">
-              <Link to='/blog'>Blog</Link>
+              <Link to="/statistics">Statistics</Link>
+            </li>
+            <li className="nav-item">
+              <Link to="/blog">Blog</Link>
             </li>
           </ul>
         </div>

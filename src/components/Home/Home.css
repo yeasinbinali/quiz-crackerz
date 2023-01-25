@@ -1,0 +1,13 @@
+.home-btn{
+    background-image: linear-gradient(rgb(114, 238, 238), rgb(111, 204, 111));
+    border: none;
+    padding: 5px 20px;
+    font-weight: bold;
+    border-radius: 7px;
+    text-decoration: none;
+    color: black;
+}
+.home-btn:hover{
+    background-image: linear-gradient(aqua, rgb(12, 238, 12));
+    color: blue;
+}
