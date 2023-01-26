@@ -27,7 +27,7 @@ const Questions = (props) => {
             })}
           </ul>
         </div>
-        {response}
+        <p className='response'>{response}</p>
       </div>
     </div>
   );
