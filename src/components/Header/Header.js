@@ -7,7 +7,7 @@ const Header = () => {
     <nav className="navbar navbar-expand-lg navbar-light container">
       <div className="container-fluid">
         <div>
-          <h3>Quiz Crackerz</h3>
+          <h3 style={{color: 'slateblue', fontWeight: 'bold'}}>Quiz Crackerz</h3>
         </div>
         <button
           className="navbar-toggler"
