@@ -9,20 +9,20 @@
     font-weight: bold;
     font-size: 17px;
 }
-.option p{
-    margin-left: 10px;
-    color: slateblue;
-    display: inline;
-}
 .option{
     border: 2px solid slateblue;
     border-radius: 10px;
     padding: 10px;
+    list-style: none;
+    cursor: pointer;
 }
 .question-option{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 10px;
+}
+.option:hover{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 @media screen and (max-width: 767px) {
     .question{

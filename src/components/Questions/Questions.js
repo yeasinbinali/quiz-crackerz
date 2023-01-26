@@ -1,31 +1,33 @@
-import React from "react";
-import './Questions.css'
+import React, { useState } from "react";
+import "./Questions.css";
 
 const Questions = (props) => {
   const question = props.question;
   console.log(question);
+  const [response, setResponse] = useState('');
+  const handleQuestion = isCorrect => {
+    if(isCorrect === question.correctAnswer){
+      setResponse('Answer is Correct');
+    }else{
+      setResponse(`${isCorrect} -> Sorry! This is Incorrect`);
+    }
+  }
   return (
     <div>
-      <div className='question'>
-      <p className='question-name'>{question.question}</p>
-      <div className='question-option'>
-        <div className='option'>
-          <input type="radio"></input>
-          <p>{question.options[0]}</p>
+      <div className="question">
+        <p className="question-name">{question.question}</p>
+        <div>
+          <ul className="question-option">
+            {question.options.map((option) => {
+              return (
+                <li onClick={() => handleQuestion(option)} className="option">
+                  {option}
+                </li>
+              );
+            })}
+          </ul>
         </div>
-        <div className='option'>
-          <input type="radio"></input>
-          <p>{question.options[1]}</p>
-        </div>
-        <div className='option'>
-          <input type="radio"></input>
-          <p>{question.options[2]}</p>
-        </div>
-        <div className='option'>
-          <input type="radio"></input>
-          <p>{question.options[3]}</p>
-        </div>
-      </div>
+        {response}
       </div>
     </div>
   );
