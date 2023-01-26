@@ -3,11 +3,9 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Main from "./layout/Main/Main";
 import Topics from "./components/Topics/Topics";
 import Statistics from "./components/Statistics/Statistics";
-import Blog from "./components/Blog/Blog";
 import Home from "./components/Home/Home";
 import Topic from "./components/Topic/Topic";
 import Quiz from "./components/Quiz/Quiz";
-// import ReactQuestions from "./components/ReactQuestions/ReactQuestions";
 
 function App() {
   const router = createBrowserRouter([
@@ -47,7 +45,6 @@ function App() {
             return fetch("https://openapi.programming-hero.com/api/quiz");
           },
         },
-        { path: "/blog", element: <Blog></Blog> },
         {
           path: "*",
           element: (

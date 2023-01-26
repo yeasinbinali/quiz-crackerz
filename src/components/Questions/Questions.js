@@ -13,7 +13,7 @@ const Questions = (props) => {
     }
   }
   return (
-    <div>
+    <div className='container'> 
       <div className="question">
         <p className="question-name">{question.question}</p>
         <div>

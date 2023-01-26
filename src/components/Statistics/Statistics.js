@@ -13,10 +13,10 @@ import { useLoaderData } from "react-router";
 const Statistics = () => {
   const options = useLoaderData().data;
   return (
-    <div>
-      <h3>Statistics</h3>
+    <div className='container'>
+      <h3 style={{color: 'slateblue', margin: '20px 0'}}>Statistics</h3>
       <BarChart className='barChart' width={500} height={300} data={options}>
-        <Bar dataKey="total" fill="#8884d8" />
+        <Bar dataKey="total" fill="#82ca9d" />
         <XAxis className='namePlate' dataKey="name" />
         <YAxis />
         <Tooltip />
