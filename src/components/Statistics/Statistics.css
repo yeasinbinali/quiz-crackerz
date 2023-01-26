@@ -1,0 +1,8 @@
+.barChart {
+    margin: 20px auto;
+}
+@media screen and (max-width: 772px) {
+    .namePlate{
+        font-size: 16px;
+    }
+}

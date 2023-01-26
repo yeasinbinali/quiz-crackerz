@@ -7,9 +7,9 @@ const Questions = (props) => {
   const [response, setResponse] = useState('');
   const handleQuestion = isCorrect => {
     if(isCorrect === question.correctAnswer){
-      setResponse('Answer is Correct');
+      setResponse('Yeah!! Answer is Correct');
     }else{
-      setResponse(`${isCorrect} -> Sorry! This is Incorrect`);
+      setResponse(`${isCorrect} ? -> Sorry! This is Incorrect`);
     }
   }
   return (

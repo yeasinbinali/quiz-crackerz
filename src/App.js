@@ -25,22 +25,37 @@ function App() {
           },
         },
         {
-          path: '/topic',
+          path: "/topic",
           element: <Topic></Topic>,
           loader: async (id) => {
-            return fetch(`https://openapi.programming-hero.com/api/quiz/${id}`)
-          }
+            return fetch(`https://openapi.programming-hero.com/api/quiz/${id}`);
+          },
         },
         {
-          path: '/quiz/:quizId',
+          path: "/quiz/:quizId",
           element: <Quiz></Quiz>,
-          loader: async ({params}) => {
-            return fetch(`https://openapi.programming-hero.com/api/quiz/${params.quizId}`)
-          }
+          loader: async ({ params }) => {
+            return fetch(
+              `https://openapi.programming-hero.com/api/quiz/${params.quizId}`
+            );
+          },
         },
-        { path: "/statistics", element: <Statistics></Statistics> },
+        {
+          path: "/statistics",
+          element: <Statistics></Statistics>,
+          loader: async () => {
+            return fetch("https://openapi.programming-hero.com/api/quiz");
+          },
+        },
         { path: "/blog", element: <Blog></Blog> },
-        {path: "*", element: <div><h3>This is no route: 404</h3></div>}
+        {
+          path: "*",
+          element: (
+            <div>
+              <h3>This is no route: 404</h3>
+            </div>
+          ),
+        },
       ],
     },
   ]);
