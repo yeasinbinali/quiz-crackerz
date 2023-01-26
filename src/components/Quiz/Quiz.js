@@ -12,7 +12,7 @@ const Quiz = () => {
     // }
     return (
         <div>
-            <h4 className='header-name'>Quiz of {questionsLoading.name}</h4>
+            <h3 className='header-name'>Quiz of {questionsLoading.name}</h3>
             {
                 questions.map(question => <Questions
                     key = {question.id}
