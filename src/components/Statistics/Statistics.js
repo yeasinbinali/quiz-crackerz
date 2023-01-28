@@ -15,7 +15,7 @@ const Statistics = () => {
   return (
     <div className='container'>
       <h3 style={{color: 'slateblue', margin: '20px 0'}}>Statistics</h3>
-      <BarChart className='barChart' width={500} height={300} data={options}>
+      <BarChart className='barChart' width={300} height={150} data={options}>
         <Bar dataKey="total" fill="#82ca9d" />
         <XAxis className='namePlate' dataKey="name" />
         <YAxis />
